@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C2280E6C1F7AD42800075280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E6B1F7AD42800075280 /* AppDelegate.m */; };
-		C2280E6F1F7AD42800075280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E6E1F7AD42800075280 /* ViewController.m */; };
+		C2280E6F1F7AD42800075280 /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E6E1F7AD42800075280 /* TrackerViewController.m */; };
 		C2280E721F7AD42800075280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2280E701F7AD42800075280 /* Main.storyboard */; };
 		C2280E751F7AD42800075280 /* Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2280E731F7AD42800075280 /* Tracker.xcdatamodeld */; };
 		C2280E771F7AD42800075280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2280E761F7AD42800075280 /* Assets.xcassets */; };
@@ -31,8 +31,8 @@
 		C2280E671F7AD42800075280 /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2280E6A1F7AD42800075280 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2280E6B1F7AD42800075280 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2280E6D1F7AD42800075280 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C2280E6E1F7AD42800075280 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2280E6D1F7AD42800075280 /* TrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
+		C2280E6E1F7AD42800075280 /* TrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
 		C2280E711F7AD42800075280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2280E741F7AD42800075280 /* Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tracker.xcdatamodel; sourceTree = "<group>"; };
 		C2280E761F7AD42800075280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,15 +83,12 @@
 		C2280E691F7AD42800075280 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				C2280E6A1F7AD42800075280 /* AppDelegate.h */,
-				C2280E6B1F7AD42800075280 /* AppDelegate.m */,
-				C2280E6D1F7AD42800075280 /* ViewController.h */,
-				C2280E6E1F7AD42800075280 /* ViewController.m */,
+				C2280E911F7AD4E500075280 /* Supporting files */,
+				C2280E6D1F7AD42800075280 /* TrackerViewController.h */,
+				C2280E6E1F7AD42800075280 /* TrackerViewController.m */,
 				C2280E701F7AD42800075280 /* Main.storyboard */,
 				C2280E761F7AD42800075280 /* Assets.xcassets */,
-				C2280E781F7AD42800075280 /* LaunchScreen.storyboard */,
 				C2280E7B1F7AD42800075280 /* Info.plist */,
-				C2280E7C1F7AD42800075280 /* main.m */,
 				C2280E731F7AD42800075280 /* Tracker.xcdatamodeld */,
 			);
 			path = Tracker;
@@ -104,6 +101,17 @@
 				C2280E881F7AD42800075280 /* Info.plist */,
 			);
 			path = TrackerTests;
+			sourceTree = "<group>";
+		};
+		C2280E911F7AD4E500075280 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C2280E6A1F7AD42800075280 /* AppDelegate.h */,
+				C2280E6B1F7AD42800075280 /* AppDelegate.m */,
+				C2280E781F7AD42800075280 /* LaunchScreen.storyboard */,
+				C2280E7C1F7AD42800075280 /* main.m */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2280E6F1F7AD42800075280 /* ViewController.m in Sources */,
+				C2280E6F1F7AD42800075280 /* TrackerViewController.m in Sources */,
 				C2280E6C1F7AD42800075280 /* AppDelegate.m in Sources */,
 				C2280E7D1F7AD42800075280 /* main.m in Sources */,
 				C2280E751F7AD42800075280 /* Tracker.xcdatamodeld in Sources */,

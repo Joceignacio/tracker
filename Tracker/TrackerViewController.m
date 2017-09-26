@@ -6,13 +6,13 @@
 //  Copyright © 2017 joce. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TrackerViewController.h"
 
-@interface ViewController ()
+@interface TrackerViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TrackerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
