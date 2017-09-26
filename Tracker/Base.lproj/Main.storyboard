@@ -8,18 +8,84 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Tracker View Controller-->
+        <!--Steps-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TrackerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Coc-5r-3Km">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="goalReached" rowHeight="32" id="3Km-Nr-wDW">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="32"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Km-Nr-wDW" id="h4U-Sb-d3m">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_star" translatesAutoresizingMaskIntoConstraints="NO" id="OqX-z4-JWS">
+                                                    <rect key="frame" x="335" y="3" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="Hth-0Z-RFJ"/>
+                                                        <constraint firstAttribute="width" constant="24" id="p0j-wX-j1d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal reached" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFo-j6-NQh">
+                                                    <rect key="frame" x="16" y="5" width="299" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="TQZ-Nw-Zht"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                                    <color key="textColor" red="0.17254901959999999" green="0.44705882349999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="OqX-z4-JWS" secondAttribute="trailing" constant="16" id="MWl-UN-B4r"/>
+                                                <constraint firstItem="jFo-j6-NQh" firstAttribute="centerY" secondItem="h4U-Sb-d3m" secondAttribute="centerY" id="Ny2-42-X7h"/>
+                                                <constraint firstItem="OqX-z4-JWS" firstAttribute="centerY" secondItem="h4U-Sb-d3m" secondAttribute="centerY" id="aCo-R0-LwC"/>
+                                                <constraint firstItem="jFo-j6-NQh" firstAttribute="leading" secondItem="h4U-Sb-d3m" secondAttribute="leading" constant="16" id="kKQ-Ka-ZJe"/>
+                                                <constraint firstItem="OqX-z4-JWS" firstAttribute="leading" secondItem="jFo-j6-NQh" secondAttribute="trailing" constant="20" id="wIy-j9-Ffa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Coc-5r-3Km" secondAttribute="bottom" id="JXV-Vt-ahk"/>
+                            <constraint firstItem="Coc-5r-3Km" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pd0-Gq-H7O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Coc-5r-3Km" secondAttribute="trailing" id="bVL-Sp-Plf"/>
+                            <constraint firstItem="Coc-5r-3Km" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g2d-VZ-YPQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4cw-DR-sQw"/>
+                    <navigationItem key="navigationItem" title="Steps" id="4cw-DR-sQw">
+                        <barButtonItem key="leftBarButtonItem" image="icon_aim" id="Y8b-FU-bgQ">
+                            <connections>
+                                <action selector="setGoalTap:" destination="BYZ-38-t0r" id="4Tb-a2-gQL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icon_plus" id="4mD-eW-8Jb">
+                            <connections>
+                                <action selector="addDayTap:" destination="BYZ-38-t0r" id="KBi-gb-8CB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="daysTableView" destination="Coc-5r-3Km" id="FoR-j7-32Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,4 +110,9 @@
             <point key="canvasLocation" x="-457" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_aim" width="22" height="22"/>
+        <image name="icon_plus" width="22" height="22"/>
+        <image name="icon_star" width="24" height="24"/>
+    </resources>
 </document>

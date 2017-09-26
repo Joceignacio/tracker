@@ -42,6 +42,8 @@
 		C2280E821F7AD42800075280 /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2280E861F7AD42800075280 /* TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerTests.m; sourceTree = "<group>"; };
 		C2280E881F7AD42800075280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2280E931F7AD73300075280 /* DaySteps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DaySteps.h; sourceTree = "<group>"; };
+		C2280E941F7AD73300075280 /* DaySteps.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaySteps.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		C2280E691F7AD42800075280 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				C2280E921F7AD72700075280 /* Model */,
 				C2280E911F7AD4E500075280 /* Supporting files */,
 				C2280E6D1F7AD42800075280 /* TrackerViewController.h */,
 				C2280E6E1F7AD42800075280 /* TrackerViewController.m */,
@@ -112,6 +115,15 @@
 				C2280E7C1F7AD42800075280 /* main.m */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		C2280E921F7AD72700075280 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2280E931F7AD73300075280 /* DaySteps.h */,
+				C2280E941F7AD73300075280 /* DaySteps.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
