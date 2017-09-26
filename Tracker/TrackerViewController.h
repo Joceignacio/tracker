@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TrackerViewController : UIViewController
+@interface TrackerViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *daysTableView;
 - (IBAction)setGoalTap:(UIBarButtonItem *)sender;
 - (IBAction)addDayTap:(UIBarButtonItem *)sender;

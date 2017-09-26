@@ -15,6 +15,10 @@
 		C2280E7A1F7AD42800075280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2280E781F7AD42800075280 /* LaunchScreen.storyboard */; };
 		C2280E7D1F7AD42800075280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E7C1F7AD42800075280 /* main.m */; };
 		C2280E871F7AD42800075280 /* TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E861F7AD42800075280 /* TrackerTests.m */; };
+		C2FEEA111F7B07E60079EDFF /* DaySteps.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E941F7AD73300075280 /* DaySteps.m */; };
+		C2FEEA121F7B08050079EDFF /* DayStepsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E991F7AD88200075280 /* DayStepsTableViewCell.m */; };
+		C2FEEA131F7B08080079EDFF /* GoalReachedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2280E9A1F7AD88200075280 /* GoalReachedTableViewCell.m */; };
+		C2FEEA141F7B08C00079EDFF /* DayStepsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2280E981F7AD88200075280 /* DayStepsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		C2280E881F7AD42800075280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2280E931F7AD73300075280 /* DaySteps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DaySteps.h; sourceTree = "<group>"; };
 		C2280E941F7AD73300075280 /* DaySteps.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaySteps.m; sourceTree = "<group>"; };
+		C2280E961F7AD88200075280 /* DayStepsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayStepsTableViewCell.h; sourceTree = "<group>"; };
+		C2280E971F7AD88200075280 /* GoalReachedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoalReachedTableViewCell.h; sourceTree = "<group>"; };
+		C2280E981F7AD88200075280 /* DayStepsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayStepsTableViewCell.xib; sourceTree = "<group>"; };
+		C2280E991F7AD88200075280 /* DayStepsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayStepsTableViewCell.m; sourceTree = "<group>"; };
+		C2280E9A1F7AD88200075280 /* GoalReachedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoalReachedTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 		C2280E691F7AD42800075280 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				C2280E951F7AD86900075280 /* TableViewCells */,
 				C2280E921F7AD72700075280 /* Model */,
 				C2280E911F7AD4E500075280 /* Supporting files */,
 				C2280E6D1F7AD42800075280 /* TrackerViewController.h */,
@@ -124,6 +134,18 @@
 				C2280E941F7AD73300075280 /* DaySteps.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C2280E951F7AD86900075280 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C2280E961F7AD88200075280 /* DayStepsTableViewCell.h */,
+				C2280E991F7AD88200075280 /* DayStepsTableViewCell.m */,
+				C2280E981F7AD88200075280 /* DayStepsTableViewCell.xib */,
+				C2280E971F7AD88200075280 /* GoalReachedTableViewCell.h */,
+				C2280E9A1F7AD88200075280 /* GoalReachedTableViewCell.m */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +232,7 @@
 			files = (
 				C2280E7A1F7AD42800075280 /* LaunchScreen.storyboard in Resources */,
 				C2280E771F7AD42800075280 /* Assets.xcassets in Resources */,
+				C2FEEA141F7B08C00079EDFF /* DayStepsTableViewCell.xib in Resources */,
 				C2280E721F7AD42800075280 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,10 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FEEA121F7B08050079EDFF /* DayStepsTableViewCell.m in Sources */,
 				C2280E6F1F7AD42800075280 /* TrackerViewController.m in Sources */,
+				C2FEEA111F7B07E60079EDFF /* DaySteps.m in Sources */,
 				C2280E6C1F7AD42800075280 /* AppDelegate.m in Sources */,
 				C2280E7D1F7AD42800075280 /* main.m in Sources */,
 				C2280E751F7AD42800075280 /* Tracker.xcdatamodeld in Sources */,
+				C2FEEA131F7B08080079EDFF /* GoalReachedTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
