@@ -10,4 +10,6 @@
 
 @interface GoalReachedTableViewCell : UITableViewCell
 
++ (NSString *)getCellIdentifier;
+
 @end
